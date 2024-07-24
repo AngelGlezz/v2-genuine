@@ -18,10 +18,6 @@ li {
     margin: 0px 0px!important;
 }
 
-.container {
-    overflow: auto;
-}
-
 .page {
     overflow-x: hidden;
 }
@@ -330,7 +326,7 @@ li {
     margin: 100px auto;
 }
 
-#sponsors-section {
+#beSponsors-section {
     width: 100%;
     overflow: auto;
     background-color: #BBDEFE;
@@ -783,6 +779,7 @@ li {
     height: auto;
     overflow: auto;
     background: transparent;
+    margin: 10px;
 }
 
 .btn-conference {
@@ -1176,7 +1173,7 @@ textarea {
     width: 100%;
     height: 100%;
     font-family: 'Roboto';
-    color: #3C7DC1;
+    color: #fff;
     text-align: center;
     text-decoration: none;
     font-weight: 700;
@@ -1188,6 +1185,10 @@ textarea {
     width: 100%;
     overflow: auto;
     padding: 50px 0px;
+}
+
+#stats-section .container {
+    overflow: auto;
 }
 
 #stats-section .title-format {
