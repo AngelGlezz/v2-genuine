@@ -1,0 +1,232 @@
+{
+    "matches": {
+        "matchdayOne": {
+            "matchdayName": "Match 1",
+            "groupOne": {
+                "nameGroup": "Diversity Group",
+                "matchOne": {
+                    "homeTeam": "Houston",
+                    "homeTeamImg": "houston.png",
+                    "awayTeam": "Tigres",
+                    "awayTeamImg": "tigres.png",
+                    "timeResult": "10:00",
+                    "pitch": "Pitch 1"
+                },
+                "matchTwo": {
+                    "homeTeam": "Miami",
+                    "homeTeamImg": "miami.png",
+                    "awayTeam": "Barcelona",
+                    "awayTeamImg": "barcelona.png",
+                    "timeResult": "11:00",
+                    "pitch": "Pitch 2"
+                },
+                "matchThree": {
+                    "homeTeam": "Sporting",
+                    "homeTeamImg": "sporting.png",
+                    "awayTeam": "Queretaro",
+                    "awayTeamImg": "queretaro.png",
+                    "timeResult": "12:00",
+                    "pitch": "Pitch 1"
+                }
+            },
+            "groupTwo": {
+                "nameGroup": "Inclusion Group",
+                "matchOne": {
+                    "homeTeam": "Houston 2",
+                    "homeTeamImg": "houston.png",
+                    "awayTeam": "Tigres 2",
+                    "awayTeamImg": "tigres.png",
+                    "timeResult": "10:00",
+                    "pitch": "Pitch 1"
+                },
+                "matchTwo": {
+                    "homeTeam": "Miami 2",
+                    "homeTeamImg": "miami.png",
+                    "awayTeam": "Barcelona 2",
+                    "awayTeamImg": "barcelona.png",
+                    "timeResult": "11:00",
+                    "pitch": "Pitch 2"
+                },
+                "matchThree": {
+                    "homeTeam": "Sporting 2",
+                    "homeTeamImg": "sporting.png",
+                    "awayTeam": "Queretaro 2",
+                    "awayTeamImg": "queretaro.png",
+                    "timeResult": "12:00",
+                    "pitch": "Pitch 1"
+                }
+            }
+        },
+        "matchdayTwo": {
+            "matchdayName": "Match 2",
+            "groupOne": {
+                "nameGroup": "Diversity Group",
+                "matchOne": {
+                    "homeTeam": "Houston",
+                    "homeTeamImg": "houston.png",
+                    "awayTeam": "Tigres",
+                    "awayTeamImg": "tigres.png",
+                    "timeResult": "12:00",
+                    "pitch": "Pitch 1"
+                },
+                "matchTwo": {
+                    "homeTeam": "Miami",
+                    "homeTeamImg": "miami.png",
+                    "awayTeam": "Barcelona",
+                    "awayTeamImg": "barcelona.png",
+                    "timeResult": "13:00",
+                    "pitch": "Pitch 2"
+                },
+                "matchThree": {
+                    "homeTeam": "Sporting",
+                    "homeTeamImg": "sporting.png",
+                    "awayTeam": "Queretaro",
+                    "awayTeamImg": "queretaro.png",
+                    "timeResult": "14:00",
+                    "pitch": "Pitch 1"
+                }
+            },
+            "groupTwo": {
+                "nameGroup": "Inclusion Group",
+                "matchOne": {
+                    "homeTeam": "Houston 2",
+                    "homeTeamImg": "houston.png",
+                    "awayTeam": "Tigres 2",
+                    "awayTeamImg": "tigres.png",
+                    "timeResult": "14:00",
+                    "pitch": "Pitch 1"
+                },
+                "matchTwo": {
+                    "homeTeam": "Miami 2",
+                    "homeTeamImg": "miami.png",
+                    "awayTeam": "Barcelona 2",
+                    "awayTeamImg": "barcelona.png",
+                    "timeResult": "13:00",
+                    "pitch": "Pitch 2"
+                },
+                "matchThree": {
+                    "homeTeam": "Sporting 2",
+                    "homeTeamImg": "sporting.png",
+                    "awayTeam": "Queretaro 2",
+                    "awayTeamImg": "queretaro.png",
+                    "timeResult": "12:00",
+                    "pitch": "Pitch 1"
+                }
+            }
+        },
+        "matchdayThree": {
+            "matchdayName": "Match 3",
+            "groupOne": {
+                "nameGroup": "Diversity Group",
+                "matchOne": {
+                    "homeTeam": "Houston",
+                    "homeTeamImg": "houston.png",
+                    "awayTeam": "Tigres",
+                    "awayTeamImg": "tigres.png",
+                    "timeResult": "20:00",
+                    "pitch": "Pitch 1"
+                },
+                "matchTwo": {
+                    "homeTeam": "Miami",
+                    "homeTeamImg": "miami.png",
+                    "awayTeam": "Barcelona",
+                    "awayTeamImg": "barcelona.png",
+                    "timeResult": "21:00",
+                    "pitch": "Pitch 2"
+                },
+                "matchThree": {
+                    "homeTeam": "Sporting",
+                    "homeTeamImg": "sporting.png",
+                    "awayTeam": "Queretaro",
+                    "awayTeamImg": "queretaro.png",
+                    "timeResult": "22:00",
+                    "pitch": "Pitch 1"
+                }
+            },
+            "groupTwo": {
+                "nameGroup": "Inclusion Group",
+                "matchOne": {
+                    "homeTeam": "Houston 2",
+                    "homeTeamImg": "houston.png",
+                    "awayTeam": "Tigres 2",
+                    "awayTeamImg": "tigres.png",
+                    "timeResult": "20:00",
+                    "pitch": "Pitch 1"
+                },
+                "matchTwo": {
+                    "homeTeam": "Miami 2",
+                    "homeTeamImg": "miami.png",
+                    "awayTeam": "Barcelona 2",
+                    "awayTeamImg": "barcelona.png",
+                    "timeResult": "21:00",
+                    "pitch": "Pitch 2"
+                },
+                "matchThree": {
+                    "homeTeam": "Sporting 2",
+                    "homeTeamImg": "sporting.png",
+                    "awayTeam": "Queretaro 2",
+                    "awayTeamImg": "queretaro.png",
+                    "timeResult": "22:00",
+                    "pitch": "Pitch 1"
+                }
+            }
+        },
+        "Four": {
+            "matchdayName": "Finals",
+            "groupOne": {
+                "nameGroup": "Diversity Group",
+                "matchOne": {
+                    "homeTeam": "Houston",
+                    "homeTeamImg": "houston.png",
+                    "awayTeam": "Tigres",
+                    "awayTeamImg": "tigres.png",
+                    "timeResult": "20:00",
+                    "pitch": "Pitch 1"
+                },
+                "matchTwo": {
+                    "homeTeam": "Miami",
+                    "homeTeamImg": "miami.png",
+                    "awayTeam": "Barcelona",
+                    "awayTeamImg": "barcelona.png",
+                    "timeResult": "21:00",
+                    "pitch": "Pitch 2"
+                },
+                "matchThree": {
+                    "homeTeam": "Sporting",
+                    "homeTeamImg": "sporting.png",
+                    "awayTeam": "Queretaro",
+                    "awayTeamImg": "queretaro.png",
+                    "timeResult": "22:00",
+                    "pitch": "Pitch 1"
+                }
+            },
+            "groupTwo": {
+                "nameGroup": "Inclusion Group",
+                "matchOne": {
+                    "homeTeam": "Houston 2",
+                    "homeTeamImg": "houston.png",
+                    "awayTeam": "Tigres 2",
+                    "awayTeamImg": "tigres.png",
+                    "timeResult": "20:00",
+                    "pitch": "Pitch 1"
+                },
+                "matchTwo": {
+                    "homeTeam": "Miami 2",
+                    "homeTeamImg": "miami.png",
+                    "awayTeam": "Barcelona 2",
+                    "awayTeamImg": "barcelona.png",
+                    "timeResult": "21:00",
+                    "pitch": "Pitch 2"
+                },
+                "matchThree": {
+                    "homeTeam": "Sporting 2",
+                    "homeTeamImg": "sporting.png",
+                    "awayTeam": "Queretaro 2",
+                    "awayTeamImg": "queretaro.png",
+                    "timeResult": "22:00",
+                    "pitch": "Pitch 1"
+                }
+            }
+        }
+    }
+}
