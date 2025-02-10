@@ -6,8 +6,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, minimal-ui">
 		<meta http-equiv="content-type" content="text/html;charset=UTF-8">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-		<link rel="stylesheet" type="text/css" href="../css/page.css?v=1.1.8">
-		<script src="../script.js?v=1.0.1"></script>
+		<link rel="stylesheet" type="text/css" href="../css/page.css?v=2.0.4">
+		<script src="../script.js?v=2.0.2"></script>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link rel="stylesheet" type="text/css" href="../css/slick-theme.css"/>
@@ -45,24 +45,29 @@
 			<nav class="topbar navbar navbar-expand-md">
 				<div class="container container-fluid">
 					<div class="topbar-container-item topbar-first-item">
-						<a class="navbar-brand" href="../"><img src="../images/logo_1.png" /></a>
+						<a class="navbar-brand" href="./"><img src="../images/logo_1.png" /></a>
 					</div>
 					<div class="topbar-container-item topbar-mid-item">
 						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
 							<span class="navbar-toggler-icon"></span>
-						 </button>
+						</button>
+						<a class="navbar-brand" href="./"><img src="../images/logo_1.png" /></a>
 						<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
 							<ul class="navbar-nav">
 								<li class="nav-item dropdown">
-									<a class="nav-link dropdown-toggle roboto-bold topbar-desktop" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">ABOUT <br> &nbsp;GENUINE</a>
+									<a class="nav-link dropdown-toggle roboto-bold topbar-desktop" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">ABOUT <br> &nbsp;&nbsp;GENUINE</a>
 									<a class="nav-link dropdown-toggle roboto-bold topbar-mobile" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">ABOUT GENUINE</a>
 									<ul class="dropdown-menu">
 										<li class="nav-item">
 											<a class="nav-link roboto-regular" href="../">HOME</a>
 										</li>
 										<li class="nav-item">
-											<a class="nav-link roboto-regular topbar-desktop topbar-mark" href="#">GENUINE <br>STORIES</a>
-											<a class="nav-link roboto-regular topbar-mobile topbar-mark" href="#">GENUINE STORIES</a>
+											<a class="nav-link roboto-regular topbar-desktop topbar-mark" href="../genuine-stories">GENUINE <br>STORIES</a>
+											<a class="nav-link roboto-regular topbar-mobile topbar-mark" href="../genuine-stories">GENUINE STORIES</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link roboto-regular topbar-desktop" href="../roundtable-sessions">ROUNDTABLE<br>SESSIONS</a>
+											<a class="nav-link roboto-regular topbar-mobile" href="../roundtable-sessions">ROUNDTABLE SESSIONS</a>
 										</li>
 										<li class="nav-item">
 											<a class="nav-link roboto-regular" href="../gallery">GALLERY</a>
@@ -77,25 +82,20 @@
 									</ul>
 								</li>
 								<li class="nav-item dropdown">
-									<a class="nav-link dropdown-toggle roboto-bold topbar-desktop" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">ABOUT THE<br> TOURNAMENT</a>
-									<a class="nav-link dropdown-toggle roboto-bold topbar-mobile" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">ABOUT THE TOURNAMENT</a>
+									<a class="nav-link dropdown-toggle roboto-bold topbar-desktop" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">THE<br> &nbsp;TOURNAMENT</a>
+									<a class="nav-link dropdown-toggle roboto-bold topbar-mobile" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">THE TOURNAMENT</a>
 									<ul class="dropdown-menu">
 										<li class="nav-item">
-											<a class="nav-link roboto-regular topbar-desktop" href="../the-tournament">THE <br>TOURNAMENT</a>
-											<a class="nav-link roboto-regular topbar-mobile" href="../the-tournament">THE TOURNAMENT</a>
+											<a class="nav-link roboto-regular" href="../competition/">COMPETITION</a>
 										</li>
 										<li class="nav-item">
-											<a class="nav-link roboto-regular topbar-desktop" href="../roundtable-sessions">ROUNDTABLE<br>SESSIONS</a>
-											<a class="nav-link roboto-regular topbar-mobile" href="../roundtable-sessions">ROUNDTABLE SESSIONS</a>
-										</li>
-										<li class="nav-item">
-											<a class="nav-link roboto-regular" href="../stats">STATS</a>
+											<a class="nav-link roboto-regular" href="../stats/">STATS</a>
 										</li>
 									</ul>
 								</li>
 								<li class="nav-item dropdown">
-									<a class="nav-link dropdown-toggle roboto-bold topbar-desktop" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">ABOUT OUR<br> &nbsp;SPONSORS</a>
-									<a class="nav-link dropdown-toggle roboto-bold topbar-mobile" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">ABOUT OUR SPONSORS</a>
+									<a class="nav-link dropdown-toggle roboto-bold topbar-desktop" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">OUR<br> &nbsp;SPONSORS</a>
+									<a class="nav-link dropdown-toggle roboto-bold topbar-mobile" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">OUR SPONSORS</a>
 									<ul class="dropdown-menu">
 										<li class="nav-item">
 											<a class="nav-link roboto-regular" id="sponsors" href="../#sponsors-section">SPONSORS</a>
@@ -124,6 +124,27 @@
 					</div>
 				</div>
 			</nav>
+			<div class="boxscore-container">
+				<div class="boxscore-top">
+					<div class="container">
+						<div class="boxscore-title roboto-bold">Matches</div>
+						<div class="boxscore-select">
+							<select name="matchday" id="matchday">
+								<option class="roboto-bold" value="gs1">Group Stage 1</option>
+								<option class="roboto-bold" value="gs2">Group Stage 2</option>
+								<option class="roboto-bold" value="gs3">Group Stage 3</option>
+								<option class="roboto-bold" value="finals" selected>Final Stage</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="boxscore">
+					<div class="matchday1 boxscore-matchdays"></div>
+					<div class="matchday2 boxscore-matchdays"></div>
+					<div class="matchday3 boxscore-matchdays"></div>
+					<div class="matchdayFinals boxscore-matchdays"></div>
+				</div>
+			</div>
 			<div id="stories-content">
 				<div class="stories-title roboto-bold">GENUINE STORIES</div>
 				<div class="container">
@@ -157,8 +178,11 @@
 					<div class="row justify-content-between">
 						<div class="col-12 col-md-10 roboto-bold" id="footer-txt">Follow GWC on Social Media!</div>
 						<div class="col-12 col-md-2" id="footer-media">
-							<a href="https://www.instagram.com/genuineworldcup/" target="_blank"><div class="footer-insta"></div></a>
-							<a href="https://www.tiktok.com/@genuineworldcup" target="_blank"><div class="footer-tiktok"></div></a>
+							<div class="row justify-content-between">
+								<a href="https://www.linkedin.com/company/genuineworldcup?trk=similar-pages" target="_blank"><div class="footer-linked"></div></a>
+								<a href="https://www.tiktok.com/@genuineworldcup" target="_blank"><div class="footer-tiktok"></div></a>
+								<a href="https://www.instagram.com/genuineworldcup/" target="_blank"><div class="footer-insta"></div></a>
+							</div>
 						</div>
 					</div>
 				</div>

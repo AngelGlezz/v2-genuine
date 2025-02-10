@@ -6,7 +6,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, minimal-ui">
 		<meta http-equiv="content-type" content="text/html;charset=UTF-8">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-		<link rel="stylesheet" type="text/css" href="../css/page.css?v=1.1.8">
+		<link rel="stylesheet" type="text/css" href="../css/page.css?v=2.0.7">
+		<script src="../script.js?v=2.0.2"></script>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -42,16 +43,17 @@
 			<nav class="topbar navbar navbar-expand-md">
 				<div class="container container-fluid">
 					<div class="topbar-container-item topbar-first-item">
-						<a class="navbar-brand" href="../"><img src="../images/logo_1.png" /></a>
+						<a class="navbar-brand" href="./"><img src="../images/logo_1.png" /></a>
 					</div>
 					<div class="topbar-container-item topbar-mid-item">
 						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
 							<span class="navbar-toggler-icon"></span>
-						 </button>
+						</button>
+						<a class="navbar-brand" href="./"><img src="../images/logo_1.png" /></a>
 						<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
 							<ul class="navbar-nav">
 								<li class="nav-item dropdown">
-									<a class="nav-link dropdown-toggle roboto-bold topbar-desktop" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">ABOUT <br> &nbsp;GENUINE</a>
+									<a class="nav-link dropdown-toggle roboto-bold topbar-desktop" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">ABOUT <br> &nbsp;&nbsp;GENUINE</a>
 									<a class="nav-link dropdown-toggle roboto-bold topbar-mobile" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">ABOUT GENUINE</a>
 									<ul class="dropdown-menu">
 										<li class="nav-item">
@@ -60,6 +62,10 @@
 										<li class="nav-item">
 											<a class="nav-link roboto-regular topbar-desktop" href="../genuine-stories">GENUINE <br>STORIES</a>
 											<a class="nav-link roboto-regular topbar-mobile" href="../genuine-stories">GENUINE STORIES</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link roboto-regular topbar-desktop topbar-mark" href="../roundtable-sessions">ROUNDTABLE<br>SESSIONS</a>
+											<a class="nav-link roboto-regular topbar-mobile topbar-mark" href="../roundtable-sessions">ROUNDTABLE SESSIONS</a>
 										</li>
 										<li class="nav-item">
 											<a class="nav-link roboto-regular" href="../gallery">GALLERY</a>
@@ -74,25 +80,20 @@
 									</ul>
 								</li>
 								<li class="nav-item dropdown">
-									<a class="nav-link dropdown-toggle roboto-bold topbar-desktop" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">ABOUT THE<br> TOURNAMENT</a>
-									<a class="nav-link dropdown-toggle roboto-bold topbar-mobile" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">ABOUT THE TOURNAMENT</a>
+									<a class="nav-link dropdown-toggle roboto-bold topbar-desktop" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">THE<br> &nbsp;TOURNAMENT</a>
+									<a class="nav-link dropdown-toggle roboto-bold topbar-mobile" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">THE TOURNAMENT</a>
 									<ul class="dropdown-menu">
 										<li class="nav-item">
-											<a class="nav-link roboto-regular topbar-desktop" href="../the-tournament">THE <br>TOURNAMENT</a>
-											<a class="nav-link roboto-regular topbar-mobile" href="../the-tournament">THE TOURNAMENT</a>
+											<a class="nav-link roboto-regular" href="../competition/">COMPETITION</a>
 										</li>
 										<li class="nav-item">
-											<a class="nav-link roboto-regular topbar-desktop topbar-mark" href="#">ROUNDTABLE<br>SESSIONS</a>
-											<a class="nav-link roboto-regular topbar-mobile topbar-mark" href="#">ROUNDTABLE SESSIONS</a>
-										</li>
-										<li class="nav-item">
-											<a class="nav-link roboto-regular" href="../stats">STATS</a>
+											<a class="nav-link roboto-regular" href="../stats/">STATS</a>
 										</li>
 									</ul>
 								</li>
 								<li class="nav-item dropdown">
-									<a class="nav-link dropdown-toggle roboto-bold topbar-desktop" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">ABOUT OUR<br> &nbsp;SPONSORS</a>
-									<a class="nav-link dropdown-toggle roboto-bold topbar-mobile" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">ABOUT OUR SPONSORS</a>
+									<a class="nav-link dropdown-toggle roboto-bold topbar-desktop" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">OUR<br> &nbsp;SPONSORS</a>
+									<a class="nav-link dropdown-toggle roboto-bold topbar-mobile" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">OUR SPONSORS</a>
 									<ul class="dropdown-menu">
 										<li class="nav-item">
 											<a class="nav-link roboto-regular" id="sponsors" href="../#sponsors-section">SPONSORS</a>
@@ -121,46 +122,91 @@
 					</div>
 				</div>
 			</nav>
+			<div class="boxscore-container">
+				<div class="boxscore-top">
+					<div class="container">
+						<div class="boxscore-title roboto-bold">Matches</div>
+						<div class="boxscore-select">
+							<select name="matchday" id="matchday">
+								<option class="roboto-bold" value="gs1">Group Stage 1</option>
+								<option class="roboto-bold" value="gs2">Group Stage 2</option>
+								<option class="roboto-bold" value="gs3">Group Stage 3</option>
+								<option class="roboto-bold" value="finals" selected>Final Stage</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="boxscore">
+					<div class="matchday1 boxscore-matchdays"></div>
+					<div class="matchday2 boxscore-matchdays"></div>
+					<div class="matchday3 boxscore-matchdays"></div>
+					<div class="matchdayFinals boxscore-matchdays"></div>
+				</div>
+			</div>
 			<div id="session">
 				<div class="inner-session">
 					<div class="container">
 						<div class="row justify-content-between">
 							<div class="roboto-regular session-text">
-								<div class="session-title">Roundtable Session</div>
-								The Genuine World Cup will foster unity not only among participating teams, but also among organizations, associations, and influential individuals.<br><br>
-								The roundtables will be a space for dialogue and innovation. An opportunity to share ideas, projects, and experiences. These roundtables will provide an invaluable opportunity for attendees to share successful practices, fostering collaboration and learning, but also to gain exposure and network.
+								<div class="session-title">GENUINE CONNECT</div>
+								We are thrilled to invite you the morning of August 1st, for  a day of inspiration, collaboration, and innovation at the Genuine Connect Event, part of the Genuine World Cup Houston 2024. This unique gathering is designed to foster meaningful dialogue and share valuable insights on the inclusion and empowerment of athletes with intellectual and developmental disabilities (IDD) and autism.
+								<br><br>Through engaging panel discussions, networking opportunities, and interactive sessions, we aim to create a platform where ideas can flourish and impactful connections can be made.
+								<br><br>Together, we can drive positive change and build a more inclusive future. Thank you for being a part of this important initiative!
 							</div>
-							<div id="session-photo"></div>
+							<div id="connect-photo"></div>
 						</div>
 					</div>
 				</div>
 				<div class="inner-session bg-blue">
 					<div class="container">
 						<div class="row justify-content-between">
-							<div id="session-photo"></div>
+							<div id="connect-photo1"></div>
 							<div class="roboto-regular session-text">
-								<div class="session-title">Roundtable Session</div>
-								The Genuine World Cup will foster unity not only among participating teams, but also among organizations, associations, and influential individuals.<br><br>
-								The roundtables will be a space for dialogue and innovation. An opportunity to share ideas, projects, and experiences. These roundtables will provide an invaluable opportunity for attendees to share successful practices, fostering collaboration and learning, but also to gain exposure and network.
+								<div class="session-title">PANEL 1: ELIMINATING BARRIERS FOR EQUAL ACCESS TO BENEFITS FOR IDD AND AUTISM</div>
+								Understand the gaps for equality and discuss strategies to remove obstacles and ensure equitable access to benefits for individuals with IDD and autism.
+								<br><br>Speakers:
+								<ul>
+									<li>Ron Lucey, Executive Director on Texas Governor’s Committee on People with Disabilities</li>
+									<li>Dr. Evanthe Collins, Vice President IDD services division at the Harris Center for Mental Health and IDD</li>
+									<li>Christopher Banks, President and CEO Autism Society of America</li>
+								</ul>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div id="session-schedule">
-				<div class="container">
-					<div class="row justify-content-center">
-						<div class="item-calendar">
-							<div class="btn-calendar">
-								<div class="calendar-day roboto-regular">August 1<span class="roboto-regular">st</span>&nbsp;&nbsp;</div>
+				<div class="inner-session">
+					<div class="container">
+						<div class="row justify-content-between">
+							<div class="roboto-regular session-text">
+								<div class="session-title">PANEL 2: HOW TO EMPLOY AND TRAIN?</div>
+								Learn from successful companies and organizations their innovative methods for training and employing individuals with IDD and autism, promoting their career development and independence.
+								<br><br>Speakers:
+								<ul>
+									<li>Jose Velasco, SVP Autism Society of America, SAP Autism program Founder (retired)</li>
+									<li>Jeff Miller, CEO of Potentia</li>
+									<li>Charles Njuguna, President and CEO of the Center for Pursuit</li>
+									<li>Thomas D'Eri, COO Rising Tide</li>
+								</ul>
 							</div>
-							<div class="btn-conference roboto-regular">Conference <br> 10:00</div>
+							<div id="connect-photo2"></div>
 						</div>
-						<div class="item-calendar">
-							<div class="btn-calendar">
-								<div class="calendar-day roboto-regular">August 2<span class="roboto-regular">nd</span>&nbsp;&nbsp;</div>
+					</div>
+				</div>
+				<div class="inner-session bg-blue">
+					<div class="container">
+						<div class="row justify-content-between">
+							<div id="connect-photo3"></div>
+							<div class="roboto-regular session-text">
+								<div class="session-title">PANEL 3: USING SPORTS AND FITNESS AS A VENUE FOR INCLUSION</div>
+								Learn how sports and fitness programs can be utilized to foster social inclusion and empower individuals with IDD and autism.
+								<br><br>Speakers:
+								<ul>
+									<li>Olga de La Fuente, Director of FUNDACIÓN LALIGA</li>
+									<li>Alberto Puig, Director Fundación Mi Alex. Be My Referee project</li>
+									<li>Tim Martin, CEO of Special Olympics Texas</li>
+									<li>John Watson, Founder and President Bloom Fitness</li>
+								</ul>
 							</div>
-							<div class="btn-conference roboto-regular">Conference <br> 12:00</div>
 						</div>
 					</div>
 				</div>
@@ -170,8 +216,11 @@
 					<div class="row justify-content-between">
 						<div class="col-12 col-md-10 roboto-bold" id="footer-txt">Follow GWC on Social Media!</div>
 						<div class="col-12 col-md-2" id="footer-media">
-							<a href="https://www.instagram.com/genuineworldcup/" target="_blank"><div class="footer-insta"></div></a>
-							<a href="https://www.tiktok.com/@genuineworldcup" target="_blank"><div class="footer-tiktok"></div></a>
+							<div class="row justify-content-between">
+								<a href="https://www.linkedin.com/company/genuineworldcup?trk=similar-pages" target="_blank"><div class="footer-linked"></div></a>
+								<a href="https://www.tiktok.com/@genuineworldcup" target="_blank"><div class="footer-tiktok"></div></a>
+								<a href="https://www.instagram.com/genuineworldcup/" target="_blank"><div class="footer-insta"></div></a>
+							</div>
 						</div>
 					</div>
 				</div>

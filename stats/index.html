@@ -6,8 +6,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, minimal-ui">
 		<meta http-equiv="content-type" content="text/html;charset=UTF-8">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-		<link rel="stylesheet" type="text/css" href="../css/page.css?v=1.1.8">
-		<script src="../script.js?v=1.0.1"></script>
+		<link rel="stylesheet" type="text/css" href="../css/page.css?v=2.0.3">
+		<script src="../script.js?v=2.0.3"></script>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -43,19 +43,20 @@
 			<nav class="topbar navbar navbar-expand-md">
 				<div class="container container-fluid">
 					<div class="topbar-container-item topbar-first-item">
-						<a class="navbar-brand" href="../"><img src="../images/logo_1.png" /></a>
+						<a class="navbar-brand" href="./"><img src="../images/logo_1.png" /></a>
 					</div>
 					<div class="topbar-container-item topbar-mid-item">
 						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
 							<span class="navbar-toggler-icon"></span>
-						 </button>
+						</button>
+						<a class="navbar-brand" href="./"><img src="../images/logo_1.png" /></a>
 						<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
 							<ul class="navbar-nav">
 								<li class="nav-item dropdown">
-									<a class="nav-link dropdown-toggle roboto-bold topbar-desktop" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">ABOUT <br> &nbsp;GENUINE</a>
+									<a class="nav-link dropdown-toggle roboto-bold topbar-desktop" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">ABOUT <br> &nbsp;&nbsp;GENUINE</a>
 									<a class="nav-link dropdown-toggle roboto-bold topbar-mobile" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">ABOUT GENUINE</a>
 									<ul class="dropdown-menu">
-										<li class="nav-item">
+                                        <li class="nav-item">
 											<a class="nav-link roboto-regular" href="../">HOME</a>
 										</li>
 										<li class="nav-item">
@@ -63,10 +64,14 @@
 											<a class="nav-link roboto-regular topbar-mobile" href="../genuine-stories">GENUINE STORIES</a>
 										</li>
 										<li class="nav-item">
+											<a class="nav-link roboto-regular topbar-desktop" href="../roundtable-sessions">ROUNDTABLE<br>SESSIONS</a>
+											<a class="nav-link roboto-regular topbar-mobile" href="../roundtable-sessions">ROUNDTABLE SESSIONS</a>
+										</li>
+										<li class="nav-item">
 											<a class="nav-link roboto-regular" href="../gallery">GALLERY</a>
 										</li>
 										<li class="nav-item">
-											<a class="nav-link roboto-regular topbar-mark" href="../contact/">CONTACT</a>
+											<a class="nav-link roboto-regular" href="../contact">CONTACT</a>
 										</li>
 										<li class="nav-item">
 											<a class="nav-link roboto-regular topbar-desktop" href="../#volunteer">VOLUNTEER <br>OPPORTUNITIES</a>
@@ -75,25 +80,20 @@
 									</ul>
 								</li>
 								<li class="nav-item dropdown">
-									<a class="nav-link dropdown-toggle roboto-bold topbar-desktop" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">ABOUT THE<br> TOURNAMENT</a>
-									<a class="nav-link dropdown-toggle roboto-bold topbar-mobile" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">ABOUT THE TOURNAMENT</a>
+									<a class="nav-link dropdown-toggle roboto-bold topbar-desktop" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">THE<br> &nbsp;TOURNAMENT</a>
+									<a class="nav-link dropdown-toggle roboto-bold topbar-mobile" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">THE TOURNAMENT</a>
 									<ul class="dropdown-menu">
 										<li class="nav-item">
-											<a class="nav-link roboto-regular topbar-desktop" href="../the-tournament">THE <br>TOURNAMENT</a>
-											<a class="nav-link roboto-regular topbar-mobile" href="../the-tournament">THE TOURNAMENT</a>
+											<a class="nav-link roboto-regular" href="../competition/">COMPETITION</a>
 										</li>
 										<li class="nav-item">
-											<a class="nav-link roboto-regular topbar-desktop" href="../roundtable-sessions">ROUNDTABLE<br>SESSIONS</a>
-											<a class="nav-link roboto-regular topbar-mobile" href="../roundtable-sessions">ROUNDTABLE SESSIONS</a>
-										</li>
-                                        <li class="nav-item">
-											<a class="nav-link roboto-regular" href="#">STATS</a>
+											<a class="nav-link roboto-regular topbar-mark" href="../stats/">STATS</a>
 										</li>
 									</ul>
 								</li>
 								<li class="nav-item dropdown">
-									<a class="nav-link dropdown-toggle roboto-bold topbar-desktop" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">ABOUT OUR<br> &nbsp;SPONSORS</a>
-									<a class="nav-link dropdown-toggle roboto-bold topbar-mobile" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">ABOUT OUR SPONSORS</a>
+									<a class="nav-link dropdown-toggle roboto-bold topbar-desktop" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">OUR<br> &nbsp;SPONSORS</a>
+									<a class="nav-link dropdown-toggle roboto-bold topbar-mobile" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">OUR SPONSORS</a>
 									<ul class="dropdown-menu">
 										<li class="nav-item">
 											<a class="nav-link roboto-regular" id="sponsors" href="../#sponsors-section">SPONSORS</a>
@@ -125,253 +125,203 @@
 			<div id="stats-section">
                 <div class="container">
                     <div class="title-format roboto-bold">STATS</div>
-                    <select class="form-select form-select-lg" aria-label="Large select example">
+                    <select class="form-select form-select-lg" aria-label="Large select example" id="group-select">
                         <option class="roboto-bold" value="diversity" selected>Diversity Group </option>
                         <option class="roboto-bold" value="inclusion">Inclusion Group </option>
                     </select>
                 </div>
                 <div class="container" id="diversity-group">
-                    <div class="row justify-content-between diversity-row">
-                        <div class="matches-container col-12 col-md-3">
-                            <div class="matches-title roboto-regular">Match 1 (August 1st - Afternoon) <!--data.matches.matchdayOne.matchdayName--></div>
-                            <div class="container-match">
-                                <div class="home-team">
-                                    <div class="home-img houston-logo"></div>
-                                    <div class="home-name roboto-regular">Houston D.</div>
-                                </div>
-                                <div class="time-result roboto-bold">
-                                    10:00
-                                    <div class="pitch roboto-regular">Pitch 1</div>
-                                </div>
-                                <div class="away-team">
-                                    <div class="away-img gallos-logo"></div>
-                                    <div class="away-name roboto-regular">Querétaro</div>
-                                </div>
-                            </div>
-                            <div class="container-match">
-                                <div class="home-team">
-                                    <div class="home-img"></div>
-                                    <div class="home-name roboto-regular"></div>
-                                </div>
-                                <div class="time-result roboto-bold"></div>
-                                <div class="pitch"></div>
-                                <div class="away-team">
-                                    <div class="away-img"></div>
-                                    <div class="away-name roboto-regular"></div>
-                                </div>
-                            </div>
-                            <div class="container-match">
-                                <div class="home-team">
-                                    <div class="home-img"></div>
-                                    <div class="home-name roboto-regular"></div>
-                                </div>
-                                <div class="time-result roboto-bold"></div>
-                                <div class="pitch"></div>
-                                <div class="away-team">
-                                    <div class="away-img"></div>
-                                    <div class="away-name roboto-regular"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="matches-container col-12 col-md-3">
-                            <div class="matches-title roboto-regular"></div>
-                            <div class="container-match">
-                                <div class="home-team">
-                                    <div class="home-img"></div>
-                                    <div class="home-name roboto-regular"></div>
-                                </div>
-                                <div class="time-result roboto-bold"></div>
-                                <div class="pitch"></div>
-                                <div class="away-team">
-                                    <div class="away-img"></div>
-                                    <div class="away-name roboto-regular"></div>
-                                </div>
-                            </div>
-                            <div class="container-match">
-                                <div class="home-team">
-                                    <div class="home-img"></div>
-                                    <div class="home-name roboto-regular"></div>
-                                </div>
-                                <div class="time-result roboto-bold"></div>
-                                <div class="pitch"></div>
-                                <div class="away-team">
-                                    <div class="away-img"></div>
-                                    <div class="away-name roboto-regular"></div>
-                                </div>
-                            </div>
-                            <div class="container-match">
-                                <div class="home-team">
-                                    <div class="home-img"></div>
-                                    <div class="home-name roboto-regular"></div>
-                                </div>
-                                <div class="time-result roboto-bold"></div>
-                                <div class="pitch"></div>
-                                <div class="away-team">
-                                    <div class="away-img"></div>
-                                    <div class="away-name roboto-regular"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="matches-container col-12 col-md-3">
-                            <div class="matches-title roboto-regular"></div>
-                            <div class="container-match">
-                                <div class="home-team">
-                                    <div class="home-img"></div>
-                                    <div class="home-name roboto-regular"></div>
-                                </div>
-                                <div class="time-result roboto-bold"></div>
-                                <div class="pitch"></div>
-                                <div class="away-team">
-                                    <div class="away-img"></div>
-                                    <div class="away-name roboto-regular"></div>
-                                </div>
-                            </div>
-                            <div class="container-match">
-                                <div class="home-team">
-                                    <div class="home-img"></div>
-                                    <div class="home-name roboto-regular"></div>
-                                </div>
-                                <div class="time-result roboto-bold"></div>
-                                <div class="pitch"></div>
-                                <div class="away-team">
-                                    <div class="away-img"></div>
-                                    <div class="away-name roboto-regular"></div>
-                                </div>
-                            </div>
-                            <div class="container-match">
-                                <div class="home-team">
-                                    <div class="home-img"></div>
-                                    <div class="home-name roboto-regular"></div>
-                                </div>
-                                <div class="time-result roboto-bold"></div>
-                                <div class="pitch"></div>
-                                <div class="away-team">
-                                    <div class="away-img"></div>
-                                    <div class="away-name roboto-regular"></div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="row justify-content-between diversity-row"></div>
+                    <div class="position-table">
+                        <table class="standings">
+                            <tr>
+                                <th class="roboto-bold table-head table-width-auto">Rank</th>
+                                <th class="roboto-bold table-head table-width-auto">Team</th>
+                                <th class="roboto-bold table-head table-width">Pts</th>
+                                <th class="roboto-bold table-head table-width">GP</th>
+                                <th class="roboto-bold table-head table-width">W</th>
+                                <th class="roboto-bold table-head table-width">D</th>
+                                <th class="roboto-bold table-head table-width">L</th>
+                                <th class="roboto-bold table-head table-width">G</th>
+                                <th class="roboto-bold table-head table-width">GC</th>
+                                <th class="roboto-bold table-head table-width">GD</th>
+                            </tr>
+                            <tr class="standings-team-container">
+                                <td class="roboto-bold table-width-auto team-data-table rank">1</td>
+                                <td class="roboto-bold table-width-auto team-data-table team-name"><div class="standings-team-logo sporting-logo"></div> Sporting CP</td>
+                                <td class="roboto-regular data-table">7</td>
+                                <td class="roboto-regular data-table">3</td>
+                                <td class="roboto-regular data-table">2</td>
+                                <td class="roboto-regular data-table">1</td>
+                                <td class="roboto-regular data-table">0</td>
+                                <td class="roboto-regular data-table">8</td>
+                                <td class="roboto-regular data-table">2</td>
+                                <td class="roboto-regular data-table">6</td>
+                            </tr>
+                            <tr class="standings-team-container">
+                                <td class="roboto-bold table-width-auto team-data-table rank">2</td>
+                                <td class="roboto-bold table-width-auto team-data-table team-name"><div class="standings-team-logo miami-logo"></div> Inter Miami</td>
+                                <td class="roboto-regular data-table">7</td>
+                                <td class="roboto-regular data-table">3</td>
+                                <td class="roboto-regular data-table">2</td>
+                                <td class="roboto-regular data-table">1</td>
+                                <td class="roboto-regular data-table">0</td>
+                                <td class="roboto-regular data-table">8</td>
+                                <td class="roboto-regular data-table">3</td>
+                                <td class="roboto-regular data-table">5</td>
+                            </tr>
+                            <tr class="standings-team-container">
+                                <td class="roboto-bold table-width-auto team-data-table rank">3</td>
+                                <td class="roboto-bold table-width-auto team-data-table team-name"><div class="standings-team-logo houston-logo"></div> Houston Dynamo</td>
+                                <td class="roboto-regular data-table">6</td>
+                                <td class="roboto-regular data-table">3</td>
+                                <td class="roboto-regular data-table">2</td>
+                                <td class="roboto-regular data-table">0</td>
+                                <td class="roboto-regular data-table">1</td>
+                                <td class="roboto-regular data-table">13</td>
+                                <td class="roboto-regular data-table">8</td>
+                                <td class="roboto-regular data-table">5</td>
+                            </tr>
+                            <tr class="standings-team-container">
+                                <td class="roboto-bold table-width-auto team-data-table rank">4</td>
+                                <td class="roboto-bold table-width-auto team-data-table team-name"><div class="standings-team-logo gimnastic-logo"></div> Nàstic de Tarragona</td>
+                                <td class="roboto-regular data-table">6</td>
+                                <td class="roboto-regular data-table">3</td>
+                                <td class="roboto-regular data-table">2</td>
+                                <td class="roboto-regular data-table">0</td>
+                                <td class="roboto-regular data-table">1</td>
+                                <td class="roboto-regular data-table">9</td>
+                                <td class="roboto-regular data-table">8</td>
+                                <td class="roboto-regular data-table">1</td>
+                            </tr>
+                            <tr class="standings-team-container">
+                                <td class="roboto-bold table-width-auto team-data-table rank">5</td>
+                                <td class="roboto-bold table-width-auto team-data-table team-name"><div class="standings-team-logo tigres-logo"></div> Tigres UANL</td>
+                                <td class="roboto-regular data-table">0</td>
+                                <td class="roboto-regular data-table">3</td>
+                                <td class="roboto-regular data-table">0</td>
+                                <td class="roboto-regular data-table">0</td>
+                                <td class="roboto-regular data-table">3</td>
+                                <td class="roboto-regular data-table">7</td>
+                                <td class="roboto-regular data-table">15</td>
+                                <td class="roboto-regular data-table">-8</td>
+                            </tr>
+                            <tr class="standings-team-container">
+                                <td class="roboto-bold table-width-auto team-data-table rank">6</td>
+                                <td class="roboto-bold table-width-auto team-data-table team-name"><div class="standings-team-logo bilbao-logo"></div> Athletic Club Fundazioa</td>
+                                <td class="roboto-regular data-table">0</td>
+                                <td class="roboto-regular data-table">3</td>
+                                <td class="roboto-regular data-table">0</td>
+                                <td class="roboto-regular data-table">0</td>
+                                <td class="roboto-regular data-table">3</td>
+                                <td class="roboto-regular data-table">5</td>
+                                <td class="roboto-regular data-table">13</td>
+                                <td class="roboto-regular data-table">-8</td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
                 <div class="container" id="inclusion-group">
-                    <div class="row justify-content-between">
-                        <div class="matches-container col-12 col-md-3">
-                            <div class="matches-title roboto-regular"> Match 1 (August 1st - Afternoon) <!--data.matches.matchdayOne.matchdayName--> </div>
-                            <div class="container-match">
-                                <div class="home-team">
-                                    <div class="home-img"></div>
-                                    <div class="home-name roboto-regular"></div>
-                                </div>
-                                <div class="time-result roboto-bold"></div>
-                                <div class="pitch"></div>
-                                <div class="away-team">
-                                    <div class="away-img"></div>
-                                    <div class="away-name roboto-regular"></div>
-                                </div>
-                            </div>
-                            <div class="container-match">
-                                <div class="home-team">
-                                    <div class="home-img"></div>
-                                    <div class="home-name roboto-regular"></div>
-                                </div>
-                                <div class="time-result roboto-bold"></div>
-                                <div class="pitch"></div>
-                                <div class="away-team">
-                                    <div class="away-img"></div>
-                                    <div class="away-name roboto-regular"></div>
-                                </div>
-                            </div>
-                            <div class="container-match">
-                                <div class="home-team">
-                                    <div class="home-img"></div>
-                                    <div class="home-name roboto-regular"></div>
-                                </div>
-                                <div class="time-result roboto-bold"></div>
-                                <div class="pitch"></div>
-                                <div class="away-team">
-                                    <div class="away-img"></div>
-                                    <div class="away-name roboto-regular"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="matches-container col-12 col-md-3">
-                            <div class="matches-title roboto-regular"></div>
-                            <div class="container-match">
-                                <div class="home-team">
-                                    <div class="home-img"></div>
-                                    <div class="home-name roboto-regular"></div>
-                                </div>
-                                <div class="time-result roboto-bold"></div>
-                                <div class="pitch"></div>
-                                <div class="away-team">
-                                    <div class="away-img"></div>
-                                    <div class="away-name roboto-regular"></div>
-                                </div>
-                            </div>
-                            <div class="container-match">
-                                <div class="home-team">
-                                    <div class="home-img"></div>
-                                    <div class="home-name roboto-regular"></div>
-                                </div>
-                                <div class="time-result roboto-bold"></div>
-                                <div class="pitch"></div>
-                                <div class="away-team">
-                                    <div class="away-img"></div>
-                                    <div class="away-name roboto-regular"></div>
-                                </div>
-                            </div>
-                            <div class="container-match">
-                                <div class="home-team">
-                                    <div class="home-img"></div>
-                                    <div class="home-name roboto-regular"></div>
-                                </div>
-                                <div class="time-result roboto-bold"></div>
-                                <div class="pitch"></div>
-                                <div class="away-team">
-                                    <div class="away-img"></div>
-                                    <div class="away-name roboto-regular"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="matches-container col-12 col-md-3">
-                            <div class="matches-title roboto-regular"></div>
-                            <div class="container-match">
-                                <div class="home-team">
-                                    <div class="home-img"></div>
-                                    <div class="home-name roboto-regular"></div>
-                                </div>
-                                <div class="time-result roboto-bold"></div>
-                                <div class="pitch"></div>
-                                <div class="away-team">
-                                    <div class="away-img"></div>
-                                    <div class="away-name roboto-regular"></div>
-                                </div>
-                            </div>
-                            <div class="container-match">
-                                <div class="home-team">
-                                    <div class="home-img"></div>
-                                    <div class="home-name roboto-regular"></div>
-                                </div>
-                                <div class="time-result roboto-bold"></div>
-                                <div class="pitch"></div>
-                                <div class="away-team">
-                                    <div class="away-img"></div>
-                                    <div class="away-name roboto-regular"></div>
-                                </div>
-                            </div>
-                            <div class="container-match">
-                                <div class="home-team">
-                                    <div class="home-img"></div>
-                                    <div class="home-name roboto-regular"></div>
-                                </div>
-                                <div class="time-result roboto-bold"></div>
-                                <div class="pitch"></div>
-                                <div class="away-team">
-                                    <div class="away-img"></div>
-                                    <div class="away-name roboto-regular"></div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="row justify-content-between inclusion-row"></div>
+                    <div class="position-table">
+                        <table class="standings">
+                            <tr>
+                                <th class="roboto-bold table-head table-width-auto">Rank</th>
+                                <th class="roboto-bold table-head table-width-auto">Team</th>
+                                <th class="roboto-bold table-head table-width">Pts</th>
+                                <th class="roboto-bold table-head table-width">GP</th>
+                                <th class="roboto-bold table-head table-width">W</th>
+                                <th class="roboto-bold table-head table-width">D</th>
+                                <th class="roboto-bold table-head table-width">L</th>
+                                <th class="roboto-bold table-head table-width">G</th>
+                                <th class="roboto-bold table-head table-width">GC</th>
+                                <th class="roboto-bold table-head table-width">GD</th>
+                            </tr>
+                            <tr class="standings-team-container">
+                                <td class="roboto-bold table-width-auto team-data-table rank">1</td>
+                                <td class="roboto-bold table-width-auto team-data-table team-name"><div class="standings-team-logo benfica-logo"></div> SL Benfica</td>
+                                <td class="roboto-regular data-table">9</td>
+                                <td class="roboto-regular data-table">3</td>
+                                <td class="roboto-regular data-table">3</td>
+                                <td class="roboto-regular data-table">0</td>
+                                <td class="roboto-regular data-table">0</td>
+                                <td class="roboto-regular data-table">11</td>
+                                <td class="roboto-regular data-table">1</td>
+                                <td class="roboto-regular data-table">10</td>
+                            </tr>
+                            <tr class="standings-team-container">
+                                <td class="roboto-bold table-width-auto team-data-table rank">2</td>
+                                <td class="roboto-bold table-width-auto team-data-table team-name"><div class="standings-team-logo barca-logo"></div> Fundació Barça</td>
+                                <td class="roboto-regular data-table">9</td>
+                                <td class="roboto-regular data-table">3</td>
+                                <td class="roboto-regular data-table">3</td>
+                                <td class="roboto-regular data-table">0</td>
+                                <td class="roboto-regular data-table">0</td>
+                                <td class="roboto-regular data-table">9</td>
+                                <td class="roboto-regular data-table">0</td>
+                                <td class="roboto-regular data-table">9</td>
+                            </tr>
+                            <tr class="standings-team-container">
+                                <td class="roboto-bold table-width-auto team-data-table rank">3</td>
+                                <td class="roboto-bold table-width-auto team-data-table team-name"><div class="standings-team-logo valencia-logo"></div> Valencia CF</td>
+                                <td class="roboto-regular data-table">7</td>
+                                <td class="roboto-regular data-table">3</td>
+                                <td class="roboto-regular data-table">2</td>
+                                <td class="roboto-regular data-table">1</td>
+                                <td class="roboto-regular data-table">0</td>
+                                <td class="roboto-regular data-table">10</td>
+                                <td class="roboto-regular data-table">4</td>
+                                <td class="roboto-regular data-table">6</td>
+                            </tr>
+                            <tr class="standings-team-container">
+                                <td class="roboto-bold table-width-auto team-data-table rank">4</td>
+                                <td class="roboto-bold table-width-auto team-data-table team-name"><div class="standings-team-logo gallos-logo"></div> ⁠Querétaro</td>
+                                <td class="roboto-regular data-table">1</td>
+                                <td class="roboto-regular data-table">3</td>
+                                <td class="roboto-regular data-table">0</td>
+                                <td class="roboto-regular data-table">1</td>
+                                <td class="roboto-regular data-table">2</td>
+                                <td class="roboto-regular data-table">3</td>
+                                <td class="roboto-regular data-table">9</td>
+                                <td class="roboto-regular data-table">-6</td>
+                            </tr>
+                            <tr class="standings-team-container">
+                                <td class="roboto-bold table-width-auto team-data-table rank">5</td>
+                                <td class="roboto-bold table-width-auto team-data-table team-name"><div class="standings-team-logo mexico-logo"></div> Selección Mexicana DI</td>
+                                <td class="roboto-regular data-table">0</td>
+                                <td class="roboto-regular data-table">3</td>
+                                <td class="roboto-regular data-table">0</td>
+                                <td class="roboto-regular data-table">0</td>
+                                <td class="roboto-regular data-table">3</td>
+                                <td class="roboto-regular data-table">1</td>
+                                <td class="roboto-regular data-table">9</td>
+                                <td class="roboto-regular data-table">-8</td>
+                            </tr>
+                            <tr class="standings-team-container">
+                                <td class="roboto-bold table-width-auto team-data-table rank">6</td>
+                                <td class="roboto-bold table-width-auto team-data-table team-name"><div class="standings-team-logo united-logo"></div> United Genuine</td>
+                                <td class="roboto-regular data-table">0</td>
+                                <td class="roboto-regular data-table">3</td>
+                                <td class="roboto-regular data-table">0</td>
+                                <td class="roboto-regular data-table">0</td>
+                                <td class="roboto-regular data-table">3</td>
+                                <td class="roboto-regular data-table">3</td>
+                                <td class="roboto-regular data-table">12</td>
+                                <td class="roboto-regular data-table">-9</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="expedition-disclaimer roboto-regular stats-disclaimer row justify-content-between">
+                        <div class="col-6 col-sm-3">*Pts = Points</div>
+                        <div class="col-6 col-sm-3">*GP = Games Played</div>
+                        <div class="col-6 col-sm-3">*W = Total Wins</div>
+                        <div class="col-6 col-sm-3">*D = Total Draws</div>
+                        <div class="col-6 col-sm-3">*L = Total Losses</div>
+                        <div class="col-6 col-sm-3">*G = Total Goals</div>
+                        <div class="col-6 col-sm-3">*GC = Goals Conceded</div>
+                        <div class="col-6 col-sm-3">*GD = Goals Differential</div>
                     </div>
                 </div>
             </div>
@@ -380,8 +330,11 @@
 					<div class="row justify-content-between">
 						<div class="col-12 col-md-10 roboto-bold" id="footer-txt">Follow GWC on Social Media!</div>
 						<div class="col-12 col-md-2" id="footer-media">
-							<a href="https://www.instagram.com/genuineworldcup/" target="_blank"><div class="footer-insta"></div></a>
-							<a href="https://www.tiktok.com/@genuineworldcup" target="_blank"><div class="footer-tiktok"></div></a>
+							<div class="row justify-content-between">
+								<a href="https://www.linkedin.com/company/genuineworldcup?trk=similar-pages" target="_blank"><div class="footer-linked"></div></a>
+								<a href="https://www.tiktok.com/@genuineworldcup" target="_blank"><div class="footer-tiktok"></div></a>
+								<a href="https://www.instagram.com/genuineworldcup/" target="_blank"><div class="footer-insta"></div></a>
+							</div>
 						</div>
 					</div>
 				</div>

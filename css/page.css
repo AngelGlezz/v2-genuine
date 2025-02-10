@@ -1,36 +1,22 @@
-.roboto-regular {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.roboto-bold {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-}
-
-li {
-    list-style-type: none!important;
-}
-
-.row {
-    margin: 0px 0px!important;
-}
-
 .page {
     overflow-x: hidden;
 }
 
 #cover {
     width: 100%;
-    height: 74vh;
-    background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,1) 33%, rgba(187,221,254,1) 100%);
+    height: 110vh;
+    background-image: url(../images/fondoDesk.JPG);
     background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
     position: relative;
-    min-height: 790px;
+    min-height: 950px;
     overflow: hidden;
+}
+
+#yt_video {
+    width: 100%!important;
+    height: 100vh!important;
 }
 
 .container {
@@ -58,7 +44,7 @@ li {
 
 .navbar-brand {
     width: 110px;
-    height: 84px;
+    height: 100px;
     cursor: pointer;
     display: block;
 }
@@ -89,6 +75,10 @@ li {
 .topbar-mid-item {
     min-width: 608px;
     width: 78%;
+}
+
+.topbar-mid-item .navbar-brand {
+    display: none;
 }
 
 .topbar-last-item {
@@ -224,10 +214,6 @@ li {
     background-image: url(../images/tiktok.png);
 }
 
-.navbar-toggler {
-    margin: auto auto auto 20px;
-}
-
 .topbar-mobile {
     display: none!important;
 }
@@ -235,7 +221,7 @@ li {
 .top-banner {
     width: 100%;
     height: 100px;
-    padding: 10px 0px;
+    margin: 50px auto 10px;
 }
 
 .banner {
@@ -279,9 +265,9 @@ li {
     background-repeat: no-repeat;
     background-size: contain;
     position: relative;
-    background-image: url(../images/logo_1.png);
-    width: 315px;
-    height: 220px;
+    background-image: url(../images/logo_2.png);
+    width: 500px;
+    height: 370px;
     margin: 0px auto;
 }
 
@@ -326,11 +312,23 @@ li {
     margin: 100px auto;
 }
 
-#beSponsors-section {
+.sponsors-container {
     width: 100%;
+    height: 100vh;
     overflow: auto;
     background-color: #BBDEFE;
-    padding: 40px 0px;
+    position: relative;
+}
+
+#beSponsors-section {
+    position: absolute;
+    width: 800px;
+    height: 500px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 .square {
@@ -366,9 +364,9 @@ li {
 }
 
 .title-tournament {
-    width: 95%;
-    height: 60px;
-    margin: 60px auto 40px 0px;
+    width: 800px;
+    height: 50px;
+    margin: 12px auto 20px;
     color: #003079;
     font-size: 50px;
     text-transform: uppercase;
@@ -513,9 +511,6 @@ li {
 .mexico-logo {
     background-image: url(../images/teams/logo/mexico.png);
 }
-.texas-logo {
-    background-image: url(../images/teams/logo/texas.png);
-}
 .valencia-logo {
     background-image: url(../images/teams/logo/valencia.png);
 }
@@ -534,6 +529,9 @@ li {
 .miami-logo {
     background-image: url(../images/teams/logo/miami.png);
 }
+.united-logo {
+    background-image: url(../images/teams/logo/united.jpg);
+}
 
 .modal {
     --bs-modal-width: 95%!important;
@@ -548,10 +546,10 @@ li {
 
 .modal-photo-team {
     width: 100%;
-    height: 600px;
+    height: 500px;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     margin-top: 30px;
 }
 
@@ -559,10 +557,50 @@ li {
     background-image: url(../images/teams/photo/houston-photo.png);
 }
 
+#nastic-photo {
+    background-image: url(../images/teams/photo/nastic-photo.png);
+}
+
+#mexico-photo {
+    background-image: url(../images/teams/photo/mexico-photo.jpeg);
+}
+
+#sporting-photo {
+    background-image: url(../images/teams/photo/sporting-photo.jpeg);
+}
+
+#valencia-photo {
+    background-image: url(../images/teams/photo/valencia-photo.jpeg);
+}
+
+#queretaro-photo {
+    background-image: url(../images/teams/photo/queretaro-photo.jpeg);
+}
+
+#athletic-photo {
+    background-image: url(../images/teams/photo/athletic-photo.jpg);
+}
+
+#barca-photo {
+    background-image: url(../images/teams/photo/barca-photo.jpg);
+}
+
+#tigres-photo {
+    background-image: url(../images/teams/photo/tigres-photo.jpeg);
+}
+
+#miami-photo {
+    background-image: url(../images/teams/photo/miami-photo.jpeg);
+}
+
+#benfica-photo {
+    background-image: url(../images/teams/photo/benfica-photo.jpg);
+}
+
 #calendar {
-    background-color: #fff;
+    background-color: #DDEFFF50;
     width: 100%;
-    padding-bottom: 90px;
+    padding: 90px 0px;
 }
 
 #calendar .container {
@@ -729,8 +767,7 @@ li {
     background-color: #fff;
     width: 100%;
     height: auto;
-    min-height: 81vh;
-    padding: 20px 0px;
+    min-height: 90vh;
     overflow: auto;
     position: relative;
 }
@@ -738,26 +775,31 @@ li {
 .inner-session {
     width: 100%;
     height: auto;
-    padding: 60px 0px;
-    overflow: auto;
+    padding: 200px 0px;
+    overflow: hidden;
 }
 
 .session-title {
     width: 100%;
     margin: 0px auto 50px auto;
-    font-size: 48px;
+    font-size: 22px;
     font-weight: 700;
-    line-height: 50px;
+    line-height: 24px;
     color: #003079;
 }
 
 .session-text {
-    font-size: 25px;
-    line-height: 30px;
+    font-size: 17px;
+    line-height: 25px;
     width: 45%!important;
     margin: 0px auto;
     text-align: justify;
     background-color: transparent;
+}
+
+.session-text li {
+    list-style-type: disc!important;
+    margin-left: 20px;
 }
 
 .bg-blue {
@@ -772,7 +814,62 @@ li {
     position: relative;
     background-size: contain;
     background-image: url(../images/session-photo.png);
-    margin: 0px auto;
+    margin: 0px auto 20px;
+}
+
+#connect-photo {
+    background-image: url(../images/connect.jpg);
+    width: 50%!important;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: contain;
+    margin: 0px auto 20px;
+}
+
+#connect-photo1 {
+    background-image: url(../images/connect-5.jpg);
+    width: 50%!important;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: contain;
+    margin: 0px auto 20px;
+}
+
+#connect-photo2 {
+    background-image: url(../images/connect-2.jpg);
+    width: 50%!important;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: contain;
+    margin: 0px auto 20px;
+}
+
+#connect-photo3 {
+    background-image: url(../images/connect-3.jpg);
+    width: 50%!important;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: contain;
+    margin: 0px auto 20px;
+}
+
+#tournament-photo {
+    background-image: url(../images/tournament.jpg);
+    width: 50%!important;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: contain;
+    margin: 0px auto 20px;
 }
 
 #session-schedule .container .row .item-calendar {
@@ -798,6 +895,7 @@ li {
     width: 100%;
     padding: 80px 0px 50px;
     height: 83vh;
+    min-height: 930px;
 }
 
 .stories-title {
@@ -852,12 +950,6 @@ li {
     text-transform: uppercase;
 }
 
-.sponsor-mid {
-    width: 800px;
-    overflow: auto;
-    margin: auto;
-}
-
 .sponsors-txt {
     background-color: #BBDEFE;
     padding: 10px 0px 18px;
@@ -872,7 +964,6 @@ li {
 }
 
 .sponsors-blue-txt {
-    width: 69%;
     color: #3C7DC1;
     font-size: 25px;
     line-height: 30px;
@@ -981,6 +1072,11 @@ li {
 }
 
 .sponsor-row .sponsor-img:nth-of-type(19) {
+    background-image: url(../images/sponsors/Autism-Society.jpg);
+    background-size: 65%;
+}
+
+.sponsor-row .sponsor-img:nth-of-type(20) {
     background-image: url(../images/sponsors/AGF.png);
 }
 
@@ -1150,25 +1246,21 @@ textarea {
 #volunteer {
     width: 100%;
     height: 1300px;
-    background-image: url(../images/volunteer_desktop_2.jpg);
+    background-image: url(../images/voluntarios.jpg);
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
 
-#volunteer .btn-send {
+.volunteer-btn {
     width: 250px;
     height: 80px;
-    position: absolute;
-    bottom: 30px;
-    left: 0px;
-    right: 0px;
-    margin: auto;
-    padding-top: 4px;
+    margin: 0px auto 25px;
+    padding: 4px;
 }
 
-#volunteer .btn-send a {
+.volunteer-btn a {
     display: block;
     width: 100%;
     height: 100%;
@@ -1191,25 +1283,89 @@ textarea {
     overflow: auto;
 }
 
+#inclusion-group {
+    display: none;
+}
+
 #stats-section .title-format {
     width: 50%;
     float: left;
 }
 
 #stats-section select {
-    width: 25%!important;
-    height: 70px!important;
+    width: 30%!important;
+    height: 65px!important;
+    min-width: 281px;
     float: right;
     margin: 15px 5px 0px 0px;
-    font-size: 32px;
+    font-size: 30px;
     font-weight: 700;
     border: none;
-    text-align: right;
+}
+
+.position-table {
+    width: 75%;
+    margin: 50px auto;
+}
+
+.standings {
+    width: 100%;
+}
+
+.table-head {
+    background-color: #3C7DC1;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 800;
+    text-align: center;
+    padding: 5px;
+}
+
+.standings-team-container {
+    border-bottom: 1px solid #BCDFFD;
+}
+
+.rank {
+    text-align: center;
+}
+
+.table-width {
+    width: 60px;
+    text-align: center;
+}
+
+.standings-team-logo {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    float: left;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.data-table {
+    line-height: 22px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.team-data-table { 
+    line-height: 43px;
+}
+
+.stats-disclaimer { 
+    width: 95%;
+}
+
+.stats-disclaimer div {
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .form-select {
-    background-size: 32px 32px!important;
-    padding: .375rem 4.5rem 0.375rem .75rem!important;
+    background-size: 30px 30px!important;
+    padding: .375rem 3rem 0.375rem .75rem!important;
 }
 
 .matches-container {
@@ -1227,6 +1383,7 @@ textarea {
 
 .container-match {
     width: 90%;
+    min-height: 150px;
     padding: 20px 0px;
     border-bottom: 1px solid #3C7DC1;
     margin: auto;
@@ -1270,12 +1427,219 @@ textarea {
     margin-top: 8px;
 }
 
+.boxscore-container {
+    width: 100%;
+}
+
+.boxscore-top {
+    width: 100%;
+    background-color: #3C7DC1;
+    height: 75px;
+}
+
+.boxscore-title {
+    font-size: 32px;
+    color: #fff;
+    font-weight: 800;
+    float: left;
+    line-height: 75px;
+}
+
+.boxscore-select {
+    width: 290px;
+    float: right;
+    margin-top: 20px;
+}
+
+.boxscore-select select {
+    width: 190px;
+    float: left;
+    font-size: 24px;
+    color: #fff;
+    border: none;
+    background-color: transparent;
+    font-weight: 600;
+    background-image: url(../images/flecha.svg);
+    background-size: 15%!important;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+}
+
+.boxscore-select select::-ms-expand {
+    display: none;
+}
+
+.boxscore-finals {
+    font-size: 24px;
+    font-weight: 300;
+    color: #fff;
+    float: right;
+    cursor: pointer;
+    margin-top: 3px;
+}
+
+.matchday1, .matchday2, .matchday3 {
+    display: none;
+}
+
+.boxscore {
+    width: 100%;
+    overflow: scroll;
+}
+
+.boxscore-inner {
+    width: 1630px;
+    margin: auto;
+    overflow-x: scroll;
+}
+
+.boxscore-inner .matches-title {
+    width: 130px;
+    height: 90%;
+    float: left;
+    padding: 5px 10px;
+    background-color: transparent;
+    color: #000;
+    line-height: 24px;
+    margin-top: 25px;
+}
+
+.boxscore-matchdays .container-match {
+    width: 250px;
+    float: left;
+    padding: 5px 10px;
+    border-bottom: none;
+    border-left: 1px solid #3C7DC1;
+    margin-top: 20px;
+}
+
+.news-container {
+    margin: auto;
+    padding: 0px 10px;
+}
+
+#section-home-news {
+    padding-bottom: 50px;
+}
+
+#section-home-news .title-tournament {
+    float: left;
+    width: 180px;
+}
+
+.all-news {
+    width: 65px;
+    float: right;
+    font-size: 16px;
+    color: #3C7DC1;
+    text-decoration: none;
+    line-height: 220px;
+}
+
+#section-home-news .container {
+    overflow: auto;
+}
+
+.news-title {
+    padding: 20px;
+    font-size: 20px;
+    line-height: 20px;
+    background-color: #DDEFFF59;
+}
+
+.txt-news {
+    padding: 10px 20px;
+    font-size: 14px;
+    line-height: 20px;
+    background-color: #DDEFFF59;
+}
+
+.myBtn {
+    border: none;
+    background-color: transparent;
+    color: #023179;
+    font-size: 14px;
+    line-height: 28px;
+    padding: 0px;
+    margin-top: 10px;
+}
+
+.img-news {
+    height: 200px;
+}
+
+.img-news img {
+    width: 100%;
+    height: 100%;
+}
+
+#more {
+    display: none;
+}
+
+.news-feed-container {
+    margin: 0px auto 50px;
+    max-width: 800px;
+}
+
+.news-feed-img {
+    width: 100%;
+    height: 500px;
+}
+
+.news-feed-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.news-feed-title {
+    background-color: #DDEFFF59;
+    padding: 30px 50px;
+    font-size: 40px;
+    line-height: 44px;
+}
+
+.news-feed-txt {
+    background-color: #DDEFFF59;
+    padding: 0px 50px 30px;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.news-feed-txt .myBtn {
+    font-size: 24px;
+    margin-top: 30px;
+}
+
+.about-container {
+    margin-top: 60px;
+}
+
+.about-img {
+    margin-bottom: 60px;
+}
+
+.about-txt {
+    padding: 0px;
+    background-color: transparent;
+}
+
 #footer {
     background: rgb(34,127,187);
     background: linear-gradient(180deg, rgba(34,127,187,1) 0%, rgba(1,11,22,1) 100%);
     width: 100%;
     overflow: auto;
     padding: 15px 30px;
+}
+
+#footer-media .row a {
+    width: 20px;
+    padding: 0px!important;
 }
 
 #footer-txt {
@@ -1293,6 +1657,7 @@ textarea {
     width: 20px;
     float: left;
     background-image: url(../images/insta-footer.png);
+    margin-left: 10px;
 }
 
 .footer-tiktok {
@@ -1305,6 +1670,17 @@ textarea {
     float: left;
     background-image: url(../images/tiktok-footer.png);
     margin-left: 10px;
+}
+
+.footer-linked {
+    background-position: top;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: 99%;
+    height: 20px;
+    width: 20px;
+    float: left;
+    background-image: url(../images/linked.png);
 }
 
 @media screen and (max-width: 1500px) {
@@ -1373,6 +1749,10 @@ textarea {
         width: 35%;
         height: 510px;
     }
+
+    .team-name {
+        min-width: 212px;
+    }
 }
 
 @media screen and (max-width: 1130px) {
@@ -1382,12 +1762,18 @@ textarea {
 }
 
 @media screen and (max-width: 1050px) {
+    #cover {
+        background-size: 150%;
+        height: 1000px;
+        min-height: 1000px;
+    }
+
     .foto-cover {
         height: 460px;
     }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
     .topbar-first-item {
         display: none;
     }
@@ -1398,6 +1784,10 @@ textarea {
 
     .sponsors-txt .title-format {
         font-size: 40px;
+    }
+
+    #calendar .container {
+        width: 630px;
     }
 
     .item-calendar {
@@ -1424,9 +1814,28 @@ textarea {
     .frase-img {
         width: 95%;
     }
+
+    .container-match {
+        width: 100%;
+        min-height: 170px;
+    }
+
+    .home-name, .away-name {
+        font-size: 15px;
+    }
+
+    .position-table {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 930px) {
+    #cover {
+        background-size: 100%;
+        height: 600px;
+        min-height: 600px;
+    }
+
     .topbar-last-item {
         display: none!important;
     }
@@ -1446,10 +1855,6 @@ textarea {
 }
 
 @media screen and (max-width: 767px) {
-    .cover-logo{
-        height: 160px;
-    }
-
     .sponsor-row .sponsor-img:nth-of-type(7) {
         background-position: center;
     }
@@ -1508,11 +1913,6 @@ textarea {
 
     .topbar-container-item {
         display: initial;
-        margin-top: 30px;
-    }
-
-    .topbar-first-item {
-        display: none;
     }
 
     .dropdown-toggle:hover {
@@ -1537,16 +1937,34 @@ textarea {
     }
 
     .topbar-mid-item {
-        min-width: 300px;
+        min-width: 180px;
+        padding-top: 10px;
+    }
+
+    .topbar-firts-item .navbar-brand, .topbar-first-item {
+        display: none;
+    }
+
+    .topbar-mid-item .navbar-brand {
+        display: block;
+    }
+
+    .navbar-brand {
+        width: 75px;
+        height: 60px;
     }
 
     #cover {
-        height: 650px;
-        min-height: 650px;
+        min-height: 670px;
     }
 
     #navbarTogglerDemo02 {
         padding-bottom: 10px;
+    }
+
+    .navbar-toggler {
+        margin-top: 15px;
+        float: left;
     }
 
     .foto-cover {
@@ -1580,7 +1998,7 @@ textarea {
     }
 
     #calendar .container {
-        width: 100%!important;
+        width: 320px!important;
     }
 
     .btn-calendar {
@@ -1588,7 +2006,7 @@ textarea {
     }
 
     .item-calendar {
-        width: 170px !important;
+        width: 155px !important;
     }
 
     #session .container .row {
@@ -1621,13 +2039,6 @@ textarea {
         height: auto;
         min-height: auto;
         margin-bottom: 20px;
-    }
-
-    .container-desk {
-        display: none;
-    }
-    .container-mobile {
-        display: block;
     }
 
     .container-mobile .accordion-button, .container-mobile .accordion-item {
@@ -1664,10 +2075,6 @@ textarea {
         width: 100%;
     }
 
-    .btn-send {
-        margin-right: 0px;
-    }
-
     .contacto-player {
         display: none;
     }
@@ -1692,12 +2099,76 @@ textarea {
         background-image: url(../images/frase.png);
     }
 
-    .footer-insta, .footer-tiktok {
-        margin-top: 10px;
+    #stats-section .container .title-format {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
     }
 
-    .footer-tiktok {
+    #stats-section select {
+        float: none;
+        margin: 0px auto 20px;
+    }
+
+    #diversity-group, #inclusion-group {
+        overflow: hidden;
+    }
+
+    .position-table {
+        overflow: scroll;
+    }
+
+    .data-table {
+        min-width: 35px;
+    }
+
+    .boxscore-title{
+        font-size: 20px;
+        margin-left: 8px;
+        line-height: 60px;
+    }
+
+    .boxscore-top {
+        height: 60px;
+    }
+
+    .final-option {
+        display: block;
+    }
+
+    .boxscore-finals {
+        display: none;
+    }
+
+    .boxscore-select {
+        width: 135px;
+    }
+
+    .boxscore-select select {
         float: right;
+        font-size: 16px;
+        width: 100%;
+        margin-right: 8px;
+    }
+
+    .news-feed-img {
+        height: 300px;
+    }
+
+    .container-match {
+        min-height: auto;
+    }
+
+    .inner-session {
+        padding: 50px 0px;
+    }
+
+    #tournament-photo {
+        width: 100%!important;
+    }
+
+    .footer-insta, .footer-tiktok, .footer-linked {
+        margin-top: 10px;
     }
 
     #footer-txt {
@@ -1712,6 +2183,13 @@ textarea {
 }
 
 @media (max-width: 576px){
+    #cover {
+        background-image: url(../images/fondoMobile.JPG);
+        background-size: 100%;
+        height: 550px;
+        min-height: 550px;
+    }
+    
     .navbar .container .container{
         width:auto;
     }
@@ -1728,11 +2206,19 @@ textarea {
     .bullets {
         margin: 20px auto;
     }
-}
 
-@media (max-width: 530px) {
-    .item-calendar {
-        width: 155px !important;
+    .expedition-disclaimer {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .modal-photo-team {
+        height: 250px;
+    }
+
+    .modal-description-team {
+        font-size: 14px;
+        line-height: 16px;
     }
 }
 
@@ -1752,13 +2238,9 @@ textarea {
         font-weight: 600;
     }
 
-    #cover {
-        height: 520px;
-        min-height: 520px;
-    }
-
-    .cover-text {
-        font-size: 35px;
+    .cover-logo {
+        width: 320px;
+        height: 235px;
     }
 
     .sponsors-blue-txt {
@@ -1795,16 +2277,56 @@ textarea {
         padding-top: 30px;
     }
 
+    #section-home-news .title-tournament {
+        margin-left: 10px;
+    }
+
+    .all-news {
+        line-height: 60px;
+        margin-right: 10px;
+    }
+
+    .news-feed-img {
+        height: 200px;
+    }
+
+    .news-feed-title {
+        font-size: 20px;
+        line-height: 22px;
+        padding: 15px 20px;
+    }
+
+    .news-feed-txt {
+        font-size: 14px;
+        line-height: 16px;
+        padding: 0px 20px 15px;
+    }
+
+    .news-feed-txt .myBtn {
+        margin-top: 15px;
+        font-size: 14px;
+    }
+
+    .title-calendar, .title-format, .title-tournament, .stories-title, .contacto-title, .modal-title {
+        font-size: 25px!important;
+        margin-bottom: 20px;
+    }
+
+    .stories-txt-title {
+        font-size: 16px;
+    }
+
+    .stories-txt {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
     #footer-txt {
         font-size: 19px;
     }
 }
 
 @media (max-width: 450px) {
-    .stories-title {
-        font-size: 37px;
-    }
-
     .frase-img {
         height: 280px;
     }
@@ -1837,19 +2359,11 @@ textarea {
     #gallery-section {
         padding: 30px 0px;
     }
-
-    .gallery-item {
-        width: 100%!important;
-    }
 }
 
 @media (max-width: 390px){
     .cover-info {
         width: 100%;
-    }
-
-    .cover-logo {
-        width: 200px;
     }
 
     .item-calendar {
@@ -1868,19 +2382,30 @@ textarea {
         font-size: 19px;
         line-height: 22px;
     }
-
-    .contacto-title {
-        font-size: 48px;
-        margin-bottom: 20px;
-    }
 }
 
-@media (max-width: 350px) {
-    .sponsors-txt .title-format {
-        font-size: 35px;
-    }
+.roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
 
-    #gallery-section .title-format {
-        font-size: 50px;
-    }
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+li {
+    list-style-type: none!important;
+}
+
+.row {
+    margin: 0px 0px!important;
 }
