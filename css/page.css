@@ -772,7 +772,6 @@
     width: 100%;
     height: auto;
     min-height: 90vh;
-    overflow: auto;
     position: relative;
 }
 
@@ -2159,6 +2158,13 @@ textarea {
         height: 300px;
     }
 
+    .about-img {
+        margin-bottom: 20px;
+    }
+    .about-container {
+        margin-top: 20px;
+    }
+
     .container-match {
         min-height: auto;
     }
@@ -2314,6 +2320,7 @@ textarea {
     .title-calendar, .title-format, .title-tournament, .stories-title, .contacto-title, .modal-title {
         font-size: 25px!important;
         margin-bottom: 20px;
+        padding: 0px 20px;
     }
 
     .stories-txt-title {
